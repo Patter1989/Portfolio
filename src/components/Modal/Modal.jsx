@@ -4,10 +4,10 @@ const Modal = ({ project, onClose }) => {
 	if (!project) return null;
 
 	useEffect(() => {
-		// Забороняємо скролити сторінку
+		
 		document.body.classList.add("overflow-hidden");
 
-		// Додаємо слухача на клавішу Escape
+		
 		const handleKeyDown = (e) => {
 			if (e.key === "Escape") {
 				onClose();

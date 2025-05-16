@@ -47,7 +47,12 @@ const ProjectsSlider = () => {
 		>
 			<Swiper
 				modules={[Autoplay, Navigation]}
-				slidesPerView={"auto"}
+				slidesPerView={1}
+				breakpoints={{
+					640: { slidesPerView: 2 },
+					768: { slidesPerView: 3 },
+					1024: { slidesPerView: 4 },
+				}}
 				spaceBetween={30}
 				loop={true}
 				// centeredSlides={true}

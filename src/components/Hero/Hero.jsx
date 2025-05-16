@@ -4,7 +4,7 @@ const Hero = () => {
   return (
 		<section
 			id='hero'
-			className='min-h-screen flex flex-col justify-center bg-testpurple items-center text-center px-4'
+			className='min-h-screen flex flex-col justify-center  items-center text-center px-4'
 		>
 			<h1 className='text-4xl md:text-6xl font-extrabold'>
 				Oleksandr Patarykin
