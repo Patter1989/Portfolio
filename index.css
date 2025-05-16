@@ -1,0 +1,133 @@
+@config "./tailwind.config.js";
+@import "tailwindcss";
+
+@layer utilities {
+  .scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  @keyframes glowLetter {
+    0%, 100% {
+      color: rgba(255, 255, 255, 0.2);
+      text-shadow: none;
+    }
+    20% {
+      color: rgba(255, 255, 255, 0.4);
+    }
+    40% {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    60% {
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    80% {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  .animate-glowLetter {
+    animation: glowLetter 5s ease-in-out infinite;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .hover-glow:hover span {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    animation: none;
+  }
+
+  .glow-ring-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+  }
+
+  .glow-ring-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: -25px;
+    bottom: -25px;
+    border-radius: 1.5rem;
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 128, 0, 0.3),
+      rgba(255, 255, 255, 0),
+      rgba(255, 128, 0, 0.3)
+    );
+    animation: rotateLight 4s linear infinite;
+    filter: blur(25px);
+    z-index: 0;
+    opacity: 0.7;
+  }
+
+  .glow-ring-wrapper img {
+    position: relative;
+    z-index: 1;
+    border-radius: 1rem;
+  }
+}
+
+
+/* @layer utilities {
+  .scrollbar-hidden {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; 
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .hover-glow:hover span {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    animation: none;
+  }
+
+  .glow-ring-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+  }
+
+  .glow-ring-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: -25px;
+    bottom: -25px;
+    border-radius: 1.5rem;
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 128, 0, 0.3),
+      rgba(255, 255, 255, 0),
+      rgba(255, 128, 0, 0.3)
+    );
+    animation: rotateLight 4s linear infinite;
+    filter: blur(25px);
+    z-index: 0;
+    opacity: 0.7;
+  }
+
+  .glow-ring-wrapper img {
+    position: relative;
+    z-index: 1;
+    border-radius: 1rem;
+  }
+} */

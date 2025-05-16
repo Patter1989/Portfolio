@@ -50,7 +50,7 @@ const ProjectsSlider = () => {
 				slidesPerView={"auto"}
 				spaceBetween={30}
 				loop={true}
-				centeredSlides={true}
+				// centeredSlides={true}
 				grabCursor={true}
 				autoplay={{
 					delay: 0,
@@ -64,7 +64,7 @@ const ProjectsSlider = () => {
 					nextEl: ".custom-next",
 					prevEl: ".custom-prev",
 				}}
-				className='projects-swiper'
+				className='projects-swiper px-8'
 			>
 				{projects.map((project, index) => (
 					<SwiperSlide
