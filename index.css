@@ -78,6 +78,26 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111; /* Тло скроллбару */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #80808080; /* Колір повзунка */
+  border-radius: 8px;
+  border: 2px solid #111111; /* Відступ між повзунком і треком */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;              /* "auto" або "thin" */
+  scrollbar-color: #80808080 #111111;   /* thumb color | track color */
+}
+
 
 /* @layer utilities {
   .scrollbar-hidden {

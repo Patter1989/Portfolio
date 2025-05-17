@@ -30,7 +30,7 @@ const Modal = ({ project, onClose }) => {
 			onClick={onClose}
 		>
 			<div
-				className='relative w-full max-w-6xl mx-4 md:mx-8 lg:mx-auto bg-neutral-900 text-white rounded-3xl shadow-2xl p-10 md:p-16 max-h-[90vh] overflow-y-auto transition-all duration-500'
+				className='relative w-full max-w-6xl mx-4 md:mx-8 lg:mx-auto bg-neutral-900 text-white rounded-3xl shadow-glowsubtle p-10 md:p-16 max-h-[90vh] overflow-y-auto transition-all duration-500'
 				onClick={handleInnerClick}
 			>
 				<button
@@ -52,7 +52,7 @@ const Modal = ({ project, onClose }) => {
 						</p>
 					</div>
 
-					<div className='flex-1 w-full max-w-md max-h-[600px] overflow-y-auto rounded-2xl scrollbar-hidden scroll-smooth animate-glow-shadow'>
+					<div className='flex-1 w-full max-w-md max-h-[600px] overflow-y-hidden rounded-2xl  scroll-smooth animate-glow-shadow'>
 						{/* <div className='glow-ring-wrapper'> */}
 						<img
 							src={project.img}

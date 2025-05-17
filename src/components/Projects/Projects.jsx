@@ -9,7 +9,7 @@ const Projects = () => {
 			id='projects'
 			// className='py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-40'
 		>
-			<div className='container sm:px-6 py-4 bg-[#111111]/90 min-h-screen'>
+			<div className='container sm:px-6 py-4 bg-[#111111]/50 min-h-screen shadow-glowsubtle rounded-2xl'>
 				<h2 className='inline-block text-xl font-light md:text-4xl tracking-tight leading-tight'>
 					{title.split("").map((char, i) => (
 						<span

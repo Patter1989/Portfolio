@@ -74,7 +74,7 @@ export default {
 			center: true,
 			padding: "1rem",
 			screens: {
-				sm: "100%",
+				sm: "320px",
 				md: "768px",
 				lg: "1024px",
 				xl: "1280px",
@@ -87,6 +87,9 @@ export default {
 			},
 			boxShadow: {
 				customGray: "0 20px 40px rgba(128, 128, 128, 0.3)",
+				softGray: "0 0 10px rgba(128, 128, 128, 0.2)",
+				glowsubtle: "0 0 40px 10px rgba(255, 0, 0, 0.2)",
+				test: "0 0 40px 10px rgba(255, 0, 0, 0.6)", // 🔴 червона
 			},
 			keyframes: {
 				glowShadow: {
@@ -94,7 +97,7 @@ export default {
 						boxShadow: "0 0 10px rgba(128, 128, 128, 0.2)",
 					},
 					"50%": {
-						boxShadow: "0 30px 50px rgba(128, 128, 128, 0.5)",
+						boxShadow: "0 0 20px 20px rgba(128, 128, 128, 0.5)",
 					},
 				},
 				glowText: {
@@ -116,7 +119,7 @@ export default {
 				},
 			},
 			animation: {
-				glowShadow: "glowShadow 10s ease-in-out infinite",
+				glowShadow: "glowShadow 5s ease-in-out infinite",
 				glowText: "glowText 5s ease-in-out infinite",
 				rotateLight: "rotateLight 4s linear infinite",
 			},

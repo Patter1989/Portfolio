@@ -30,10 +30,10 @@ const Layout = () => {
 			</video>
 
 			{/* 🖤 Темна прозора накладка */}
-			<div className='absolute inset-0 bg-[#111111]/95 z-10' />
+			<div className='absolute inset-0 bg-[#111111]/90 z-10' />
 
 			{/* 📌 Фіксований верх (Navbar + все фонове) */}
-			<div className='absolute inset-0 z-20 pointer-events-none'>
+			<div className='absolute inset-0 z-40 pointer-events-none'>
 				<Navbar />
 			</div>
 

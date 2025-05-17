@@ -49,9 +49,11 @@ const ProjectsSlider = () => {
 				modules={[Autoplay, Navigation]}
 				slidesPerView={1}
 				breakpoints={{
-					640: { slidesPerView: 2 },
-					768: { slidesPerView: 3 },
-					1024: { slidesPerView: 4 },
+					320: { slidesPerView: 3 },
+					640: { slidesPerView: 5 },
+					768: { slidesPerView: 6 },
+					1024: { slidesPerView: 8 },
+					1440: { slidesPerView: 12 },
 				}}
 				spaceBetween={30}
 				loop={true}
