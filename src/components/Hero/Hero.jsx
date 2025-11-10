@@ -16,7 +16,7 @@ const Hero = () => {
 				href='#projects'
 				className='mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition'
 			>
-				Проєкти
+				Projects
 			</a>
 		</section>
 	);

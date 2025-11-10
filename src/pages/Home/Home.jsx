@@ -4,7 +4,7 @@ import Projects from '../../components/Projects/Projects';
 
 const Home = () => {
   return (
-		<main className='text-center'>
+		<main className='text-center pt-16'>
 			<Hero />
 			<Projects />
 			{/* <About />
